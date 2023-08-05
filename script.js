@@ -12,6 +12,7 @@ const relatedArtists = document.getElementById('related-artists')
 const otherAlbums = document.getElementById('other-albums')
 const content = document.getElementById('content')
 
+require('dotenv').config().
 
 //metadata of the loaded track
 song.onloadedmetadata = function () {
@@ -67,7 +68,7 @@ const lyricsConfig = {
   url: 'https://genius-song-lyrics1.p.rapidapi.com/song/lyrics/',
   params: { id: '7076626' },
   headers: {
-    'X-RapidAPI-Key': '00183be6b6mshd6855c57a934978p1e2b63jsn42e9090d124d',
+    'X-RapidAPI-Key': '',
     'X-RapidAPI-Host': 'genius-song-lyrics1.p.rapidapi.com',
   },
 }
@@ -97,7 +98,7 @@ const otherAlbumsConfig = {
     limit: '100',
   },
   headers: {
-    'X-RapidAPI-Key': '102666777bmshe8515faad7a1171p1d295cjsnda8bb99506c1',
+    'X-RapidAPI-Key': '',
     'X-RapidAPI-Host': 'spotify23.p.rapidapi.com',
   },
 }
@@ -123,7 +124,7 @@ const relatedArtistsConfig = {
     id: '06HL4z0CvFAxyc27GXpf02',
   },
   headers: {
-    'X-RapidAPI-Key': '102666777bmshe8515faad7a1171p1d295cjsnda8bb99506c1',
+    'X-RapidAPI-Key': '',
     'X-RapidAPI-Host': 'spotify23.p.rapidapi.com',
   },
 }
